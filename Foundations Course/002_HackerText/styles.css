@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-family: "Segoe UI", monospace;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  user-select: none;
+}

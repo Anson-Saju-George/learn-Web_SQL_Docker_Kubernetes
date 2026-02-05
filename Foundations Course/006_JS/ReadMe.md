@@ -1,0 +1,6 @@
+- repeatString
+- reverseString
+- removeFromArray
+- sumAll
+- leapYears
+- tempConversion
