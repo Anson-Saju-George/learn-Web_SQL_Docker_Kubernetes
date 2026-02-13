@@ -1,10 +1,9 @@
-# Stop All Running Docker Containers
+# Stop and Remove All Docker Containers
 
 ## 1. Check running containers
-
 ```powershell
 docker ps
-```
+````
 
 Output:
 
@@ -51,4 +50,33 @@ Output:
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 
-All running containers have been successfully stopped.
+---
+
+## 4. Remove all containers (running + stopped)
+
+```powershell
+docker rm $(docker ps -aq)
+```
+
+Output:
+
+```
+4c006ee7fe86
+fa6a41074a63
+cfea09505de4
+d478a571108f
+119bc7354160
+80b0c3d32f1d
+303195e0ed39
+e80087de9c98
+8f0d37d25293
+e8d1294f3ae7
+4e31d8cd9b9c
+fe8c84d51494
+523bcf20e41e
+1181512782d3
+38310ac67267
+a78246542e73
+```
+
+All containers have been successfully removed.
